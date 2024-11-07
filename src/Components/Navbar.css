@@ -1,0 +1,55 @@
+.header {
+  position: fixed; /* Fixes the navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full screen width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: monospace;
+  z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-option {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.nav-option.selected {
+  background-color: rgb(99, 151, 229);
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+.profile_pic {
+  position: relative;
+}
+
+.profile_dropdown {
+  position: absolute;
+  top: calc(100% + 5px);
+  right: 0;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(60, 58, 58, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+.profile_pic:hover .profile_dropdown {
+  visibility: visible;
+}
+
+.profile_dropdown button {
+  width: 100px;
+}

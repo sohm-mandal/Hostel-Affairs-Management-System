@@ -1,0 +1,3 @@
+Roommatematching > cd backend
+Roommatematching/backend > npm install
+Roommatematching/backend > nodemon server
